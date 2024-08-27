@@ -1,0 +1,24 @@
+.kategori_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre kolonner */
+  gap: 20px; /* Afstand mellem boksene */
+  padding: 20px; /* Indre margin for grid'en */
+}
+
+.kategori_box {
+  background-color: #f0f0f0; /* Lys grå baggrund */
+  padding: 20px; /* Indre margin for hver boks */
+  text-align: center; /* Centrer tekst i boksen */
+  border: 2px solid #ccc; /* Tynd kant omkring boksen */
+  border-radius: 5px; /* Bløde hjørner */
+  font-size: 16px; /* Juster tekststørrelse */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+  cursor: pointer; /* Ændrer cursoren til en pegefinger ved hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Glat overgang til hover-effekter */
+}
+
+.kategori_box:hover {
+  transform: translateY(-5px); /* Løfter boksen en smule op */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Forstærker skyggen ved hover */
+  background-color: #e0e0e0; /* Ændrer baggrundsfarven en smule ved hover */
+}

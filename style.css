@@ -77,3 +77,32 @@
     display: block;
   }
 }
+
+.produktliste_grid ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.produktliste_grid li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produktliste_grid img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+  cursor: pointer; /* Ændrer cursoren til en pegefinger ved hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Glat overgang til hover-effekter */
+}
+
+.produktliste_grid img:hover {
+  transform: translateY(-5px); /* Løfter boksen en smule op */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Forstærker skyggen ved hover */
+  background-color: #e0e0e0; /* Ændrer baggrundsfarven en smule ved hover */
+}

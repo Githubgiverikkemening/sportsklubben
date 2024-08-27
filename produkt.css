@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo span {
+  color: red;
+}
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  font-size: 14px;
+}
+
+.breadcrumb li {
+  margin-right: 5px;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Grid container that splits into left and right columns */
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 40px; /* Space between the two columns */
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.right-column {
+  display: grid;
+  gap: 20px; /* Space between product details and purchase section */
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.purchase-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.purchase-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.purchase-section p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.purchase-section select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.purchase-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.purchase-section button:hover {
+  background-color: #444;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sportsklubben</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="produkt.css" />
   </head>
   <body>
     <header>
@@ -66,7 +67,44 @@
         </button>
       </nav>
     </header>
-    <main><h1>SportsKlubben</h1></main>
+
+    <main class="product-container">
+      <h1>SportsKlubben</h1>
+      <!-- Left column: Product Image -->
+      <div class="left-column">
+        <img
+          src="bold.webp"
+          alt="Sahara Team India Fanwear Round Neck Jersey"
+        />
+      </div>
+
+      <!-- Right column: Product Information and Purchase Section -->
+      <div class="right-column">
+        <div class="product-details">
+          <h2>Product Information</h2>
+          <p>
+            <strong>Model name:</strong> Sahara Team India Fanwear Round Neck
+            Jersey
+          </p>
+          <p><strong>Color:</strong> Blue</p>
+          <p><strong>Inventory number:</strong> 1163</p>
+          <p><strong>Nike</strong></p>
+          <p>Nike, creating experiences for today's athlete</p>
+        </div>
+        <div class="purchase-section">
+          <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          <p>Nike | Tshirts</p>
+          <label for="size">Choose a size</label>
+          <select id="size" name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button>Add to basket</button>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
