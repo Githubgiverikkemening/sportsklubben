@@ -105,6 +105,28 @@
         </div>
       </div>
     </main>
+
+    <script>
+      const endpoint = "https://kea-alt-del.dk/t7/api/products?limit=50";
+
+      const skabelon = document.querySelector("template").content;
+      const sektion = document.querySelector("section");
+
+      fetch(endpoint)
+        .then((res) => res.json())
+        .then(visListe);
+
+      function visListe(data) {
+        data.forEach((piece) => {
+          console.log(piece);
+
+          const kopi = skabelon.cloneNode(true);
+          kopi.querySelector("h2").textContent = piece.productdisplayname;
+          kopi.querySelector("h2").textContent = piece.productdisplayname;
+          sektion.appendChild(kopi);
+        });
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
