@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frugt</title>
+  </head>
+  <body>
+    <h1>Biler</h1>
+    <template
+      ><article id="bilkort">
+        <img src="" alt="" />
+        <h2>model</h2>
+        <p>molor</p>
+      </article></template
+    >
+    <h1>Playliste</h1>
+    <ul></ul>
+    <h1>brand</h1>
+
+    <script>
+      const liste = document.querySelector("ul");
+
+      const frugter = [
+        "ufo uber",
+        "Cowboy In LA",
+        "BLEED",
+        "HELL N BACK",
+        "Stick Season",
+        "Snooze",
+        "Drunk In The Morning",
+        "Last Last",
+        "Du Ikk' Alene",
+        "Pretty Please",
+      ];
+
+      frugter.forEach(putListe);
+
+      function putListe(element) {
+        console.log(element);
+        liste.innerHTML += "<li>" + element + "</li>";
+      }
+    </script>
+  </body>
+</html>
